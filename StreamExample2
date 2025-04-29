@@ -1,0 +1,8 @@
+import java.util.Arrays;
+
+public class StreamExample2 {
+    public static void main(String[] args) {
+        String[] array = {"Java", "Stream", "API"};
+        Arrays.stream(array).forEach(System.out::println);
+    }
+}
