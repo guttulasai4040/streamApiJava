@@ -1,0 +1,10 @@
+import java.util.List;
+
+public class StreamExample6 {
+    public static void main(String[] args) {
+        List<String> names = List.of("alice", "bob", "charlie");
+        names.stream()
+             .map(String::toUpperCase)
+             .forEach(System.out::println);
+    }
+}
