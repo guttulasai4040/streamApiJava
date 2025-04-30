@@ -1,0 +1,11 @@
+import java.util.List;
+import java.util.Comparator;
+
+public class StreamExample16 {
+    public static void main(String[] args) {
+        List<Integer> numbers = List.of(5, 3, 9, 1, 6);
+        numbers.stream()
+               .min(Comparator.naturalOrder())
+               .ifPresent(System.out::println);
+    }
+}
