@@ -1,0 +1,11 @@
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamExample23 {
+    public static void main(String[] args) {
+        List<String> items = List.of("Pen", "Pencil", "Eraser");
+        String joined = items.stream()
+                             .collect(Collectors.joining(", "));
+        System.out.println(joined);
+    }
+}
