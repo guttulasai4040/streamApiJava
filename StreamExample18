@@ -1,0 +1,10 @@
+import java.util.List;
+
+public class StreamExample18 {
+    public static void main(String[] args) {
+        List<String> list = List.of("one", "two", "three", "four");
+        list.stream()
+            .skip(2)
+            .forEach(System.out::println);
+    }
+}
